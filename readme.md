@@ -96,14 +96,11 @@ As per above illustration, following are the important points to be considered.
     ## Basic Opertions
     Following are the basic operations supported by an array.
 
-    | Operations     | Description            | 
- :------- | :------------------------- | 
- `Traverse` | print all the array elements one by one.|
- `Insertion` |  Adds an element at the given index.|
- `Deletion`  | Deletes an element at the given index. |
- `Searching`   | Search for an element using the given index or by the value. |
- `Update` | Updates an element at the given index. |
-
+ + Traverse - print all the array elements one by one.
+ + Insertion - Adds an element at the given index.
+ + Deletion - Deletes an element at the given index. 
+ + Searching - Search for an element using the given index or by the value. 
+ + Update - Updates an element at the given index. 
 
 ## Data types
 

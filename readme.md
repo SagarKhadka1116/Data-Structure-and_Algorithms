@@ -96,7 +96,7 @@ As per above illustration, following are the important points to be considered.
     ## Basic Opertions
     Following are the basic operations supported by an array.
 
-    | Operations     | Description                | 
+    | Operations     | Description            | 
  :------- | :------------------------- | 
  `Traverse` | print all the array elements one by one.|
  `Insertion` |  Adds an element at the given index.|

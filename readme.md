@@ -91,7 +91,7 @@ As per above illustration, following are the important points to be considered.
    ``` 
 
     #### output : 1
-    As from above example 
+    As from above example, we can see that the  value at index 8 is '1'. 
 
     ## Basic Opertions
     Following are the basic operations supported by an array.
@@ -100,7 +100,7 @@ As per above illustration, following are the important points to be considered.
  + Insertion - Adds an element at the given index.
  + Deletion - Deletes an element at the given index. 
  + Searching - Search for an element using the given index or by the value. 
- + Update - Updates an element at the given index. 
+ + Update -    Updates an element at the given index. 
 
 ## Data types
 
@@ -184,4 +184,65 @@ LA[2] = 5
 LA[3] = 10  
 LA[4] = 7  
 LA[5] = 8  
+
    ```
+## Deletion Operation 
+In deletion operation, we remove an element from the sorted array and re-organize all elements of an array.
+
+### Algorithm  
+Consider LA is a linear array with N elements and K is a positive integer such 
+that K<=N. Following is the algorithm to delete an element available at the Kth position 
+of LA. 
+```
+1. Start 
+2. Set J = K 
+3. Repeat steps 4 and 5 while J < N 
+4. Set LA[J] = LA[J + 1] 
+5. Set J = J+1 
+6. Set N = N
+7. Stop
+```
+#### Example
+Following is the implementation of the above algorithm −
+```c
+#include <stdio.h> 
+ 
+void main() { 
+   int LA[] = {1,3,5,7,8}; 
+   int k = 3, n = 5; 
+   int i, j; 
+     printf("The original array elements are :\n"); 
+   for(i = 0; i<n; i++) { 
+      printf("LA[%d] = %d \n", i, LA[i]); 
+   } 
+     
+   j = k; 
+   while( j < n) { 
+      LA[j-1] = LA[j]; 
+      j = j + 1; 
+   } 
+   n = n -1; 
+     printf("The array elements after deletion :\n"); 
+   for(i = 0; i<n; i++) { 
+      printf("LA[%d] = %d \n", i, LA[i]); 
+   } 
+} 
+```
+When we compile and execute the above program, it produces the following result − 
+
+#### Output
+```
+The original array elements are : 
+LA[0] = 1  
+LA[1] = 3  
+LA[2] = 5  
+LA[3] = 7  
+LA[4] = 8  
+The array elements after deletion : 
+LA[0] = 1  
+LA[1] = 3  
+LA[2] = 7  
+LA[3] = 8 
+```
+
+

@@ -245,4 +245,107 @@ LA[2] = 7
 LA[3] = 8 
 ```
 
+###  Search Oeprtaion
+  We can perform a search for an array element based on its value or its index. 
+
+#### Algorithm
+
+Consider LA is a linear array with N elements and K is a positive integer such 
+that K<=N. Following is the algorithm to find an element with a value of ITEM using 
+sequential search. 
+
+```
+1. Start 
+2. Set J = 0 
+3. Repeat steps 4 and 5 while J < N 
+4. IF LA[J] is equal ITEM THEN GOTO STEP 6 
+5. Set J = J +1 
+6. PRINT J, ITEM 
+7. Stop 
+```
+#### Example
+Following is the implementation of the above algorithm − 
+```c
+#include <stdio.h> 
+ 
+void main() { 
+   int LA[] = {1,3,5,7,8}; 
+   int item = 5, n = 5; 
+   int i = 0, j = 0; 
+      printf("The original array elements are :\n"); 
+    for(i = 0; i<n; i++) { 
+      printf("LA[%d] = %d \n", i, LA[i]); 
+   } 
+     while( j < n){ 
+      if( LA[j] == item ) { 
+         break; 
+      } 
+     j = j + 1; 
+   } 
+  printf("Found element %d at position %d\n", item, j+1); 
+} 
+```
+When we compile and execute the above program, it produces the following result − 
+#### Output
+```
+The original array elements are : 
+LA[0] = 1  
+LA[1] = 3  
+LA[2] = 5 
+LA[3] = 7  
+LA[4] = 8  
+Found element 5 at position 3  
+```
+In this example, `item` is 5 and `N` is 5. The search starts from index 0 in the array `LA`. 
+
+### Update Operation
+Update operation refers to updating an existing element from the array at a given index. 
+
+#### Algorithm
+Consider LA is a linear array with N elements and K is a positive integer such 
+that K<=N. Following is the algorithm to update an element available at the Kth position 
+of LA.   
+```
+1. Start 
+2. Set LA[K-1] = ITEM 
+3. Stop 
+```
+#### Example
+Following is the implementation of the above algorithm − 
+#include <stdio.h> 
+ ```c
+void main() { 
+   int LA[] = {1,3,5,7,8}; 
+   int k = 3, n = 5, item = 10; 
+   int i, j; 
+     printf("The original array elements are :\n"); 
+   for(i = 0; i<n; i++) { 
+      printf("LA[%d] = %d \n", i, LA[i]); 
+   } 
+     
+   LA[k-1] = item; 
+  printf("The array elements after updation :\n"); 
+   for(i = 0; i<n; i++) { 
+      printf("LA[%d] = %d \n", i, LA[i]); 
+   } 
+} 
+```
+When we compile and execute the above program, it produces the following result − 
+#### Output 
+```
+The original array elements are : 
+LA[0] = 1  
+LA[1] = 3  
+LA[2] = 5  
+LA[3] = 7  
+LA[4] = 8 
+The array elements after updation : 
+LA[0] = 1  
+LA[1] = 3  
+LA[2] = 10  
+LA[3] = 7  
+LA[4] = 8  
+```
+
+
 
